@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="520_userguid_person_taitou_2" translatesAutoresizingMaskIntoConstraints="NO" id="jtz-RX-28k">
+                                <rect key="frame" x="112" y="535" width="190" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="JF3-JQ-pox"/>
+                                    <constraint firstAttribute="height" constant="181" id="PPs-a9-yRG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="520_userguid_sun" translatesAutoresizingMaskIntoConstraints="NO" id="BOd-ib-gOj">
+                                <rect key="frame" x="269" y="28" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="YdR-hF-Q0J"/>
+                                    <constraint firstAttribute="width" constant="125" id="dxx-te-84V"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BOd-ib-gOj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Dv8-gb-XnF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jtz-RX-28k" secondAttribute="bottom" constant="20" id="n5D-MO-FWG"/>
+                            <constraint firstAttribute="trailing" secondItem="BOd-ib-gOj" secondAttribute="trailing" constant="20" id="xRZ-Wn-zEV"/>
+                            <constraint firstItem="jtz-RX-28k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ywY-c4-R77"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="personImageView" destination="jtz-RX-28k" id="iWL-sc-v2J"/>
+                        <outlet property="sunImageView" destination="BOd-ib-gOj" id="f8e-3U-dxP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="404"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="520_userguid_person_taitou_2" width="380" height="362"/>
+        <image name="520_userguid_sun" width="250" height="250"/>
+    </resources>
+</document>
